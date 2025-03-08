@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form>
+        <label for="name">Pizza Name:</label>
+        <input type="text" id="name" required>
+        <span id="nameError"></span> <!-- Error message for pizza name -->
+    
+        <br><label for="pizzaSize">Pizza Size:</label>
+        <select id="pizzaSize" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <div id="sizeError" style="display: inline;"></div> <!-- Error message for pizza size -->
+        <br>
+        Toppings: <br><br>
+        <input type="checkbox" id="pepperoni" value="pepperoni">Pepperoni<br>
+        <input type="checkbox" id="mushrooms" value="mushrooms">Mushrooms<br>
+        <input type="checkbox" id="sausage" value="olives">Sausage<br>
+        <br><button type="button" id="order">Submit</button>
+    </form>
+    <script src="../dist/q3.js"></script>
+</body>
+</html>
