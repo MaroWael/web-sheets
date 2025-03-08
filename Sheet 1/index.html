@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <title>7bibi ya 2lbiii</title>
+    <style>
+        body {
+            background-color: #B6D0E2;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+            vertical-align: top;
+        }
+        .header td img {
+            width: 100px;
+            height: 100px;
+        }
+        .header td h1 {
+            position: relative;
+            font-size: 20px;
+            color: darkblue;
+            top: 15px;
+        }
+        .navbar {
+            background-color: darkblue;
+        }
+        .navbar a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            padding: 50px;
+        }
+        .navbar td {
+            padding: 20px;
+        }
+        .navbar span {
+            padding: 10px;
+        }
+        .navbar a span:hover {
+            background-color: #B6D0E2;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+        .main {
+            position: relative;
+        }
+        .main .left {
+            text-align: left;
+            position: absolute;
+            width: 30%;
+        }
+        .main .left span {
+            font-weight: 800;
+        }
+        .main .right {
+            position: absolute;
+            width: 70%;
+            left: 30%;
+        }
+        iframe {
+            width: 100%;
+            height: 70vh;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="header">
+            <td><img src="FacofSciLogo.jpg" alt="FacofSciLogo"></td>
+            <td><h1>Revision</h1></td>
+            <td><img src="AinShamsLogo.png" alt="AinShamsLogo"></td>
+        </tr>
+        <tr class="navbar">
+            <td></td>
+            <td>
+                <a href="index.html" class="nav-links"><span>Home</span></a>
+                <a href="tv.html" class="nav-links" target="i"><span>TVs</span></a>
+                <a href="reg.html" class="nav-links" target="i"><span>Register</span></a>
+            </td>
+            <td></td>
+        </tr>
+        <tr class="main">
+            <td class="left"><span>Working Hours</span> <br>
+                Monday: 9:00 AM - 10:00 PM <br>
+                Saturday: 10:00 AM - 11:00 PM </td>
+            <td class="right" colspan="2">
+                <iframe src="shop.jpg" frameborder="0" scrolling="no" name="i"></iframe>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

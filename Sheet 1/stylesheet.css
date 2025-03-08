@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: darkblue;
+    color: #fff;
+    height: 70px;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1.7em;
+    font-size: 25px;
+    /* change the pos of menu to the left*/
+    /*margin-right: 400px*/
+}
+
+.menu li:hover {
+    background-color: #B6D0E2;
+    border-radius: 5px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
