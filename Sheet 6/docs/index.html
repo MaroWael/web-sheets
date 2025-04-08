@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(163, 163, 163);
+        }
+
+        div {
+            margin: auto;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        input[type="submit"] {
+            background-color: rgb(0, 123, 255);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        p {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <label for="username" id="uname">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <p class="ue"></p>
+
+            <label for="password" id="pass">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <p class="pe"></p>
+
+            <label for="semester" id="sem">Semester:</label>
+            <select id="semester">
+                <option value="" disabled selected>Select your Semester level</option>
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+                <option value="fourth">Fourth</option>
+                <option value="fifth">Fifth</option>
+                <option value="sixth">Sixth</option>
+                <option value="seventh">Seventh</option>
+                <option value="eighth">Eighth</option>
+            </select> <br>
+            <p class="se"></p>
+
+            Course Taken:
+            <input type="checkbox" id="cpp" name="course1" value="Course 1"> COMP 104
+            <input type="checkbox" id="js" name="course2" value="Course 2"> COMP 206
+            <input type="checkbox" id="math" name="course3" value="Course 3"> MATH 101
+            <p class="ce"></p>
+
+            <input type="submit" value="Register">
+
+        </form>
+    </div>
+    <script src="../dist/app.js"></script>
+</body>
+
+</html>
