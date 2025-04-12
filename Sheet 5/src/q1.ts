@@ -1,19 +1,14 @@
 function removeRepetition(arr:number[])
 {
-    let map = {};
+    let array = [0,0,0,0,0,0,0,0,0];
     for(let i = 0; i < arr.length; ++i)
     {
-        if(isNaN(map[arr[i]]))
-            map[arr[i]] = 0
-        ++map[arr[i]]
+        ++arr[i];
     }
-    let k = Object.keys(map);
-    let v = Object.values(map);
     let out = [];
-    for(let i = 0; i < k.length; ++i)
+    for(let i = 0; i < 9; ++i)
     {
-        if(v[i] < 3)
-            out.push(k[i])
+        out.push(i)
     }
     return out;
 }
