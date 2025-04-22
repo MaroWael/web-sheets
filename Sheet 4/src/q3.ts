@@ -21,7 +21,7 @@ btn.addEventListener('click', () => {
     if (sortingSelect.value === 'gpa_asc') {
         arr.sort((a, b) => a.gpa - b.gpa);
     } else if (sortingSelect.value === 'name_desc') {
-        arr.sort((a, b) => b.name.localeCompare(a.name)); // Sort names in descending order
+        arr.sort((a, b) => b.name.localeCompare(a.name));
     }
     let alerts = 0;
     arr.forEach(e=>{if(e.gpa < 2) ++alerts})
