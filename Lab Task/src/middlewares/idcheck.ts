@@ -8,10 +8,6 @@ function idCheck(req: Request, res: Response, next:NextFunction)
         res.status(401).json({"Message": "Wrong ID"})
         return
     }
-    if(cars.length === 0)
-    {
-        res.status(401).json({"Message": "No cars in the store"})
-    }
     next()
 }
 export default idCheck
