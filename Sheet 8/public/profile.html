@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <div id="user-greeting"></div>
+    <form action="/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>    
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const response = await fetch('/current');
+            if (response.ok) {
+                const user = await response.json();
+                const greeting = document.getElementById('user-greeting');
+                console.log(user)
+                if (greeting) {
+                    greeting.textContent = `Welcome, ${user.username}!`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

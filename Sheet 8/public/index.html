@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to our webpage</h1>
+    <div id="test">
+        <a href="/register.html" id="register-link">Register</a>
+        <a href="/login.html" id="login-link">Login</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', async ()=> {
+            const response = await fetch('/current')
+            if(response.ok) {
+                const user = await response.json()
+                document.getElementById('test').style.display = 'none';
+                console.log(user)
+                document.write(`Hello ${user.username}`)
+            }
+        })
+    </script>
+</body>
+</html>
